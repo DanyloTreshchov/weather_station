@@ -1,0 +1,59 @@
+<style>
+    #current_weather {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items:start;
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    #temperature {
+        font-size: 2em;
+        font-weight: bold;
+        color: #333;
+    }
+
+    #humidity,
+    #pressure,
+    #brightness {
+        font-size: 1.5em;
+        color: #333;
+        margin-top: 10px;
+    }
+
+    #temperature::before {
+        content: "Temperature: ";
+    }
+
+    #humidity::before {
+        content: "Humidity: ";
+    }
+
+    #pressure::before {
+        content: "Pressure: ";
+    }
+
+    #brightness::before {
+        content: "Brightness: "
+    }
+</style>
+
+<div id="current_weather">
+    <div id="temperature"></div>
+    <div id="humidity"></div>
+    <div id="pressure"></div>
+    <div id="brightness"></div>
+</div>
+
+<div id="past_records">
+    <div class="past_record">
+        <p>Date</p>
+        <p>Temperature</p>
+        <p>Humidity</p>
+        <p>Pressure</p>
+        <p>Brightness</p>
+    </div>
+</div>
