@@ -16,7 +16,6 @@ html, body{
 #past_records {
     width: 90vw;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-auto-rows: 1fr;
     grid-auto-flow: column;
     overflow-x: scroll;

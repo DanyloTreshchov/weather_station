@@ -129,7 +129,8 @@ export class WeatherComponent {
       console.log("Error: Element not found");
       return;
     }
-    for (let i = 0; i < jsonData.length; i++) {
+    pastRecords.style.gridTemplateColumns = "repeat(" + (jsonData.length + 1) + ", minmax(200px, 1fr)";
+    for (let i = jsonData.length - 1; i >= 0; i--) {
       let record = document.createElement("div");
       record.className = "past_record";
       let date = document.createElement("p");
