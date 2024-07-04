@@ -136,7 +136,7 @@ export class WeatherComponent {
       let date = document.createElement("p");
       let timestamp = jsonData[i].timestamp;
       let timestamp_date = new Date(timestamp.slice(0, 4), timestamp.slice(4, 6), timestamp.slice(6, 8), timestamp.slice(8, 10), timestamp.slice(10, 12), timestamp.slice(12, 14));
-      timestamp_date = new Date(timestamp_date.getTime() + 60*60*1000);
+      timestamp_date = new Date(timestamp_date.getTime() + 120*60*1000);
       date.innerHTML = timestamp_date.toISOString().slice(0, 19).replace(/-/g, "/").replace("T", " ");
       record.appendChild(date);
       let temp = document.createElement("p");
